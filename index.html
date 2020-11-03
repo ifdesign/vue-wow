@@ -65,35 +65,20 @@
         fill:white;
       }
 
-      footer.valtech .ws {
-        display: flex;
-        align-items: center;
-        color: white;
-      }
-
-      footer.valtech a {
-        margin-left: 0.5rem;
-        font-weight: 600;
-        color: white;
-      }
-
       @media screen and (min-width: 768px) {
-        footer.valtech svg,
-        footer.valtech .ws {
+        footer.valtech svg {
           margin: 2rem;
         }
       }
 
       @media screen and (min-width: 1024px) {
-        footer.valtech svg,
-        footer.valtech .ws {
+        footer.valtech svg {
           margin: 4rem;
         }
       }
 
       @media screen and (min-width: 1400px) {
-        footer.valtech svg,
-        footer.valtech .ws {
+        footer.valtech svg {
           margin: 4rem;
         }
       }
@@ -122,10 +107,10 @@
   <body>
     <main role="main">
       <article id="webslides">
-        <section  class="bg-black">
+        <section  class="bg-black aligncenter">
           <span class="background dark" style="background-image:url('./static/images/matteo-maretto-ayog-lKRrp8-unsplash.jpg')"></span>
           <div class="wrap size-50">
-            <h1><em>Vue</em> ways of Working</h1>
+            <h1>Vue ways of working</h1>
             <hr>
             by
             <a href="mailto:istvan.farkas@valtech.com">
@@ -147,15 +132,35 @@
                 </li>
                 <li>
                   <a href="#slide=3">
-                    <span class="chapter">Vue golden rules</span>
+                    <span class="chapter">Working with Vue</span>
                     <span class="toc-page">4</span>
                   </a>
-                </li>
-                <li>
-                  <a href="#slide=4">
-                    <span class="chapter">Starting a new Vue project</span>
-                    <span class="toc-page">5</span>
-                  </a>
+                  <ol>
+                    <li>
+                      <a href="#slide=3">
+                        <span class="chapter">Starting a new Vue project</span>
+                        <span class="toc-page">5</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#slide=3">
+                        <span class="chapter">Vue golden rules</span>
+                        <span class="toc-page">6</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#slide=4">
+                        <span class="chapter">Vue tips</span>
+                        <span class="toc-page">7</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#slide=4">
+                        <span class="chapter">Vuex tips</span>
+                        <span class="toc-page">8</span>
+                      </a>
+                    </li>
+                  </ol>
                 </li>
               </ol>
             </div>
@@ -220,6 +225,14 @@
         </section>
         <section>
           <div class="wrap">
+            <h2>Working with Vue</h2>
+            <hr>
+            ...
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h5>Working with Vue</h5>
             <h2>Starting a new Vue project</h2>
             <hr>
             <ul class="flexblock steps">
@@ -240,7 +253,8 @@
         <section class="bg-black">
           <span class="background dark" style="background-image:url(./static/images/alexandre-chambon-iRON0g6iO0k-unsplash.jpg)"></span>
           <div class="wrap">
-            <h2>The Vue <strong>golden rules</strong></h2>
+            <h5>Working with Vue</h5>
+            <h2>Vue <strong>golden rules</strong></h2>
             <hr>
             <h3>Read the doc</h3>
             <h3>Use vue-cli</h3>
@@ -258,6 +272,7 @@
         </section>
         <section>
           <div class="wrap">
+            <h5>Working with Vue</h5>
             <h2>Vue <strong>tips</strong></h2>
             <hr>
             <h3>v-bind</h3>
@@ -272,6 +287,7 @@
         </section>
         <section>
           <div class="wrap">
+            <h5>Working with Vue</h5>
             <h2>Vuex <strong>tips</strong></h2>
             <hr>
             <h3>use getters</h3>
@@ -286,12 +302,6 @@
       </article>
     </main>
     <footer class="valtech">
-      <div class="ws">
-        Built with
-        <a href="https://webslides.tv/" target="_blank">
-          webslides
-        </a>
-      </div>
       <div class="spacer"></div>
       <svg viewBox="0 0 340 69.6" width="340" height="69.6">
         <title>Valtech</title>
