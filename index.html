@@ -29,8 +29,7 @@
     <!-- custom styles -->
     <style>
       h1 {
-        margin: 2rem 0;
-        padding: 5rem;
+        padding: 3rem;
         border: 1.25rem solid white;
         font-weight: 800;
       }
@@ -108,13 +107,17 @@
     <main role="main">
       <article id="webslides">
         <section  class="bg-black aligncenter">
-          <span class="background dark" style="background-image:url('./static/images/matteo-maretto-ayog-lKRrp8-unsplash.jpg')"></span>
-          <div class="wrap size-50">
+          <span class="background dark" style="background-image:url('./static/images/luemen-carlson-YgNZxmEWQvk-unsplash.jpg')"></span>
+          <div class="wrap size-50 alignleft">
             <h1>Vue ways of working</h1>
             <hr>
             by
             <a href="mailto:istvan.farkas@valtech.com">
               istvan.farkas@valtech.com
+            </a>
+            &amp;
+            <a href="mailto:joel.poulin@valtech.com">
+              joel.poulin@valtech.com
             </a>
           </div>
         </section>
@@ -131,42 +134,22 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#slide=3">
+                  <a href="#slide=4">
                     <span class="chapter">Working with Vue</span>
                     <span class="toc-page">4</span>
                   </a>
-                  <ol>
-                    <li>
-                      <a href="#slide=3">
-                        <span class="chapter">Starting a new Vue project</span>
-                        <span class="toc-page">5</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#slide=3">
-                        <span class="chapter">Vue golden rules</span>
-                        <span class="toc-page">6</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#slide=4">
-                        <span class="chapter">Vue tips</span>
-                        <span class="toc-page">7</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#slide=4">
-                        <span class="chapter">Vuex tips</span>
-                        <span class="toc-page">8</span>
-                      </a>
-                    </li>
-                  </ol>
+                </li>
+                <li>
+                  <a href="#slide=13">
+                    <span class="chapter">Vue golden rules</span>
+                    <span class="toc-page">13</span>
+                  </a>
                 </li>
               </ol>
             </div>
           </div>
         </section>
-        <section class="bg-trans-dark">
+        <section class="bg-black">
           <div class="wrap">
             <h2>The components pyramid</h2>
             <hr>
@@ -223,16 +206,68 @@
             </div>
           </div>
         </section>
-        <section>
-          <div class="wrap">
+        <section class="bg-gradient-v">
+          <div class="wrap size-50">
             <h2>Working with Vue</h2>
             <hr>
-            ...
+            <br>
+            <div class="toc">
+              <ol>
+                <li>
+                  <a href="#slide=5">
+                    <span class="chapter">Starting a new project</span>
+                    <span class="toc-page">5</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=6">
+                    <span class="chapter">Configure linting</span>
+                    <span class="toc-page">6</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=7">
+                    <span class="chapter">Working with <code>.env</code> files</span>
+                    <span class="toc-page">7</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=8">
+                    <span class="chapter">Routing</span>
+                    <span class="toc-page">8</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=9">
+                    <span class="chapter">Lazy loading components</span>
+                    <span class="toc-page">9</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=10">
+                    <span class="chapter">Connecting your backend</span>
+                    <span class="toc-page">10</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=11">
+                    <span class="chapter">Mocking</span>
+                    <span class="toc-page">11</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=12">
+                    <span class="chapter">i18n</span>
+                    <span class="toc-page">12</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
           </div>
         </section>
-        <section>
+        <section class="slide-top">
           <div class="wrap">
-            <h5>Working with Vue</h5>
+            <h6>Working with Vue</h6>
             <h2>Starting a new Vue project</h2>
             <hr>
             <ul class="flexblock steps">
@@ -250,57 +285,263 @@
             </ul>
           </div>
         </section>
-        <section class="bg-black">
-          <span class="background dark" style="background-image:url(./static/images/alexandre-chambon-iRON0g6iO0k-unsplash.jpg)"></span>
+        <section>
           <div class="wrap">
-            <h5>Working with Vue</h5>
-            <h2>Vue <strong>golden rules</strong></h2>
-            <hr>
-            <h3>Read the doc</h3>
-            <h3>Use vue-cli</h3>
-            <h3>Don't install jQuery</h3>
-            <h3>Don't play with the dom directly</h3>
-            <h3>Use vue linter and lint on save</h3>
-            <br> => Use props with default values
-            <br> => () => ({}), () => []
-            <h3>Clear event listeners</h3>
-            <h3>Use axios if you have to support IE11 or need to cancel promises</h3>
+            <h6>Working with Vue</h6>
+            <h2>Configure linting</h2>
           </div>
         </section>
         <section>
-          <h2>Vue golden rules advanced</h2>
-          <h3>Avoid mounted if possible (prefer computed and watchers)</h3>
-          <h3>Avoid mutating global state in dumb components, use controller (smart) components instead</h3>
+          <div class="wrap">
+            <h6>Working with Vue</h6>
+            <h2>Working with <code>.env</code> files</h2>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h6>Working with Vue</h6>
+            <h2>Routing</h2>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h6>Working with Vue</h6>
+            <h2>Lazy loading components</h2>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h6>Working with Vue</h6>
+            <h2>Connecting to your backend</h2>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h6>Working with Vue</h6>
+            <h2>Mocking</h2>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h6>Working with Vue</h6>
+            <h2>i18n</h2>
+          </div>
+        </section>
+        <section>
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap content-center">
+            <h2 style="color:yellow"><strong>Vue golden rules</strong></h2>
+          </div>
+        </section>
+        <section class="slide-top bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-left">
+              <h6 style="color:yellow">Golden rule 1</h6>
+              <h3>Read the docs</h3>
+              <hr>
+              <p>
+                Vue official doc is very well done. You have to read it, at least the <a href="https://vuejs.org/v2/guide/index.html" target="_blank">Introduction</a> and the <a href="https://vuejs.org/v2/guide/instance.html" target="_blank">Vue Instance</a> pages.
+              </p>
+              <p>
+                You have no excuse of not knowing something that is clearly documented.
+              </p>
+              <p>
+                <a href="https://cli.vuejs.org/" target="_blank">Vue-cli</a>, <a href="https://vuex.vuejs.org/" target="_blank">Vuex</a>, <a href="https://router.vuejs.org/" target="_blank">vue-router</a> and <a href="https://kazupon.github.io/vue-i18n/" target="_blank">vue-i18n</a> are also very well documented by the way 😌
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="slide-top bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-center">
+              <h6 style="color:yellow">Golden rule 2</h6>
+              <h3>Use vue-cli</h3>
+              <hr>
+              <p>
+                Setup is made easy thanks to <a href="#slide=5"><code>vue-cli</code></a> (same as <code>create-react-app</code>), there is no reason for not using it.
+              </p>
+              <p>
+                Not one.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="slide-top bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-right">
+              <h6 style="color:yellow">Golden rule 3</h6>
+              <h3>Don't install jQuery</h3>
+              <hr>
+              <p>
+                Vue and the standard <a href="https://developer.mozilla.org/docs/Web/API" target="_blank">DOM</a> APIs is all you  need to manipulate DOM.
+                <br>
+                jQuery is to be banned from your Vue project as it will just encroach on the Vue runtime and potentially breaks things.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-left">
+              <h6 style="color:yellow">Golden rule 4</h6>
+              <h3>Use single file components</h3>
+              <hr>
+              <p>
+                Vue allows you to encapsulate HTML, CSS (scoped or not) and JavaScript in a single <code>.vue</code> component file.
+                <br>
+                This is the recommended way to implement components.
+                <br>
+                Of course you can have plain JS files for services, helpers, etc. and (Post)CSS files for global styles in your project.
+              </p>
+            </li>
+            </div>
+          </div>
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-center">
+              <h6 style="color:yellow">Golden rule 5</h6>
+              <h3>Don't play with the dom directly</h3>
+              <hr>
+              <p>
+                Vue uses a <a href="https://vuejs.org/v2/guide/render-function.html#The-Virtual-DOM" target="_blank">virtual representation of the DOM</a>. That means that even if you're writing HTML in your <code>.vue</code> files, it's not what will be effectively rendered in the HTML page.
+                <br>
+                If you need to manipulate DOM, use the <a href="https://vuejs.org/v2/guide/components-edge-cases.html#Accessing-Child-Component-Instances-amp-Child-Elements" target="_blank"><code>ref</code></a> attribute on your element.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-right">
+              <h6 style="color:yellow">Golden rule 6</h6>
+              <h3>Use vue linter and lint on save</h3>
+              <hr>
+              <p>
+                <!--
+                    => Use props with default values
+                    => () => ({}), () => []
+                  -->
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="slide-bottom bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-left">
+              <h6 style="color:yellow">Golden rule 7</h6>
+              <h3>Clear event listeners</h3>
+              <hr>
+              <p>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="slide-bottom  bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-center">
+              <h6 style="color:yellow">Golden rule 8</h6>
+              <h3>Use axios if you have to support IE11 or need to cancel promises</h3>
+              <hr>
+              <p>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="slide-bottom bg-black">
+          <span class="background dark" style="background-image:url(./static/images/james-lee-1I0JgqetXvQ-unsplash.jpg)"></span>
+          <div class="wrap">
+            <div class="content-right">
+              <h6 style="color:yellow">Golden rule 9</h6>
+              <h3>Ask for help and challenge your work</h3>
+              <hr>
+              <p>
+                If you're stuck or don't know how to go on, ask teammates, colleagues and the internet (alligator).
+              </p>
+              <p>
+                <strong>Challenge your code</strong>: are you the only one one solving a problem this way ? If yes, either you're a genius or you did something wrong. Doing wrong having 1 advantage: there's room for improvement 🤓
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--<section>
+          <div class="wrap">
+            <h5>Working with Vue</h5>
+            <h2>Organizing your code</h2>
+            <hr>
+            <p>Slides: Code structure (local/global components, domain-driven architecture), Architecture (services, helpers, etc.), Styling</p>
+          </div>
         </section>
         <section>
           <div class="wrap">
             <h5>Working with Vue</h5>
             <h2>Vue <strong>tips</strong></h2>
             <hr>
-            <h3>v-bind</h3>
-            <h3>&lt;component :is="myComponent"&gt;</h3>
             <h3>@form.submit.prevent.once</h3>
             <h3>a11y basics</h3>
+            <h3>v-on &amp; v-bind</h3>
+            <h3>&lt;component :is="myComponent"&gt;</h3>
+            <h3>Lazy load component (in component + router)</h3>
             <h3>watch deep:true</h3>
             <h3>Define events in dedicated file (cf. ovp)</h3>
-            <h3>Use services</h3>
-            <h3></h3>
+            <h3>Keep components as small as possible (but not too small...)</h3>
+            <h3>DRY: Create a dedicated component as soon as it is needed in 2 places</h3>
+            <h3>It's better to v-for on a vue component than on dom nodes</h3>
+            <h3>
+              Avoid <code>mounted()</code> if possible (prefer computed and watchers)
+            </h3>
+            <h3>
+              Avoid mutating global state in dumb components, use controller (smart) components instead
+            </h3>
           </div>
+        </section>
+        <section>
+          <h2>Opened questions</h2>
+          <hr>
+          <ul>
+            <li>
+              How to style light dom from a component scoped styles?
+              <br>
+              => ex: a navigation component expects to receive a list (ul/li) in light dom
+            </li>
+          </ul>
         </section>
         <section>
           <div class="wrap">
             <h5>Working with Vue</h5>
             <h2>Vuex <strong>tips</strong></h2>
             <hr>
-            <h3>use getters</h3>
+            <h3>RTFM!</h3>
+            <h3>About getters</h3>
             <h3>initialState</h3>
-            <h3>reset store</h3>
+            <h3>reset store => put it in a "SPA with authentication" slide</h3>
             <h3>Define routes in separated file</h3>
             <h3>Actions return promise ootb!</h3>
-            <h3></h3>
-            <h3></h3>
+            <h3>Use namespaced modules for sub-store</h3>
+            <h3>Don't use if you don't need it (composition-api)</h3>
+            <h3>Don't make it dependant on router</h3>
+            <h3>Use vuex ONLY if you need a transversal reactive central state management</h3>
           </div>
         </section>
+        <section>
+          Vue 3
+        </section>
+        <section>
+          CMS integration
+          - multiple entrypoints (with modules)
+          - one big bundle
+          - aem specifics
+          - sitecore specifics
+          - strategies (light dom, seo)
+        </section>-->
       </article>
     </main>
     <footer class="valtech">
