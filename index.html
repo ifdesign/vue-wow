@@ -260,15 +260,17 @@
             <h3>Use vue-cli</h3>
             <h3>Don't install jQuery</h3>
             <h3>Don't play with the dom directly</h3>
-            <h3>Don't modify data in components</h3>
-            <h3>Use vue linter</h3>
+            <h3>Use vue linter and lint on save</h3>
             <br> => Use props with default values
             <br> => () => ({}), () => []
-            <h3>Avoid mounted if possible (use a watcher instead)</h3>
-            <h3>Use events</h3>
             <h3>Clear event listeners</h3>
             <h3>Use axios if you have to support IE11 or need to cancel promises</h3>
           </div>
+        </section>
+        <section>
+          <h2>Vue golden rules advanced</h2>
+          <h3>Avoid mounted if possible (prefer computed and watchers)</h3>
+          <h3>Avoid mutating global state in dumb components, use controller (smart) components instead</h3>
         </section>
         <section>
           <div class="wrap">
